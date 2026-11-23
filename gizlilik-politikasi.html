@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sayday – Gizlilik Politikası</title>
+<style>
+  :root { --bg:#ffffff; --text:#1d1f24; --muted:#5d636e; --accent:#c7820f; --line:#e4e6ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1115; --text:#eceef2; --muted:#9aa0aa; --accent:#f5a524; --line:#2c313c; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:19px; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sayday – Gizlilik Politikası</h1>
+  <p class="muted">Son güncelleme: 9 Kasım 2026 · <a href="privacy-policy.html">English</a></p>
+
+  <p>Bu politika, <strong>Sayday</strong> Android uygulamasının (“Uygulama”) hangi bilgileri topladığını,
+  nasıl kullandığını ve haklarınızı açıklar. Uygulamanın geliştiricisi Ersen Öztürk’tür (“biz”).</p>
+
+  <h2>1. Kısaca</h2>
+  <ul>
+    <li>Notlarınız, planlarınız, hatırlatmalarınız, gelir/gider kayıtlarınız, teklifleriniz ve bölümleriniz <strong>yalnızca telefonunuzda</strong> saklanır. Bizim sunucumuza gönderilmez.</li>
+    <li>Hesap için yalnızca <strong>e-posta adresiniz</strong> ve şifreniz kullanılır; bunlar Google Firebase Authentication hizmetinde tutulur.</li>
+    <li>Ses kayıtlarınız saklanmaz. Sadece sesten yazıya çevrilen cümle, kayıt olarak telefonunuza yazılır.</li>
+    <li>Ücretsiz sürümde <strong>Google AdMob</strong> reklamları gösterilir (aşağıda 4a). <strong>Sayday Premium</strong> aboneliğinde reklam yoktur.</li>
+    <li>Notlarınız, planlarınız ve harcamalarınız reklam için kullanılmaz; verileriniz satılmaz.</li>
+  </ul>
+
+  <h2>2. Toplanan bilgiler</h2>
+  <table>
+    <tr><th>Bilgi</th><th>Neden</th><th>Nerede tutulur</th></tr>
+    <tr><td>E-posta adresi</td><td>Hesap oluşturma, giriş, e-posta doğrulama ve şifre sıfırlama</td><td>Google Firebase Authentication</td></tr>
+    <tr><td>Şifre</td><td>Giriş</td><td>Firebase’de şifrelenmiş (hash) olarak; biz şifrenizi göremeyiz</td></tr>
+    <tr><td>Notlar, planlar, hatırlatmalar, gelir/gider, teklifler, bölümler</td><td>Uygulamanın temel işlevi</td><td>Yalnızca cihazınızdaki uygulama veritabanında</td></tr>
+    <tr><td>Mikrofon sesi</td><td>Söylediğinizi yazıya çevirmek</td><td>Saklanmaz (aşağıya bakın)</td></tr>
+  </table>
+
+  <h2>3. Mikrofon ve ses</h2>
+  <p>Uygulama mikrofonu iki şekilde kullanır:</p>
+  <ul>
+    <li><strong>Arka planda dinleme</strong> (isteğe bağlı, Ayarlar’dan açılır): Ses, telefonunuza indirilen Vosk ses modeliyle
+      <strong>tamamen cihaz üzerinde</strong> yazıya çevrilir. Ses hiçbir yere gönderilmez. Bu özellik açıkken Android, bildirim
+      çubuğunda sürekli bir bildirim ve mikrofon simgesi gösterir; istediğiniz an kapatabilirsiniz.</li>
+    <li><strong>Mikrofon tuşu / ana ekran widget’ı</strong>: Telefonunuzun kendi ses tanıma hizmeti kullanılır (çoğu cihazda Google).
+      Bu durumda ses, o hizmetin kendi gizlilik koşullarına göre işlenir. Uygulama sesin kendisini saklamaz; yalnızca yazıya çevrilmiş metni alır.</li>
+  </ul>
+  <p>Ses modeli ilk kullanımda <a href="https://alphacephei.com/vosk/">alphacephei.com</a> adresinden indirilir; bu indirme sırasında yalnızca standart internet bağlantı bilgileri (ör. IP adresi) o sunucuya ulaşır.</p>
+
+  <h2>4. Kullanılan üçüncü taraf hizmetler</h2>
+  <ul>
+    <li><strong>Google Firebase Authentication</strong> – e-posta ile giriş ve doğrulama. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a></li>
+    <li><strong>Google Play Hizmetleri</strong> – Firebase’in çalışması için.</li>
+    <li><strong>Google AdMob</strong> ve <strong>Google Play Faturalandırma</strong> – reklam ve abonelik (bkz. 4a). <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></li>
+    <li><strong>Google ML Kit (Varlık çıkarma)</strong> – Türkçe dışındaki dillerde cümledeki tarih/saat ve tutarı <strong>cihaz üzerinde</strong> bulur. Seçilen dilin küçük modeli bir kez Google sunucularından indirilir; metniniz gönderilmez.</li>
+    <li><strong>Cihazınızın ses tanıma ve metin okuma (TTS) hizmetleri</strong> – yalnızca mikrofon tuşu ve sesli onay için.</li>
+  </ul>
+
+  <h2>4a. Reklamlar ve abonelik</h2>
+  <ul>
+    <li><strong>Reklamlar (ücretsiz sürüm):</strong> Reklamları Google AdMob gösterir. AdMob, reklam göstermek, ölçmek ve kötüye kullanımı önlemek için
+      cihazınızın <strong>reklam kimliğini</strong>, IP adresini (yaklaşık konum), cihaz ve uygulama bilgilerini toplayabilir. Notlarınız, sesiniz
+      ve kayıtlarınız AdMob’a <strong>gönderilmez</strong>. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de reklamlardan önce Google’ın izin
+      penceresi çıkar; seçiminizi Ayarlar → <em>Reklam gizlilik ayarları</em>’ndan değiştirebilirsiniz. Reklam kimliğinizi telefonun
+      Ayarlar → Gizlilik → Reklamlar bölümünden sıfırlayabilir ya da silebilirsiniz.
+      <a href="https://policies.google.com/technologies/partner-sites">Google iş ortağı sitelerindeki veri kullanımı</a></li>
+    <li><strong>Sayday Premium:</strong> Reklamsız kullanım için aylık ya da yıllık abonelik. Ödeme tamamen <strong>Google Play</strong> üzerinden yapılır;
+      kart bilgilerinizi biz görmeyiz. Abonelik her dönem kendiliğinden yenilenir, Play Store → Abonelikler’den istediğiniz an iptal edebilirsiniz.</li>
+  </ul>
+
+  <h2>5. İzinler</h2>
+  <ul>
+    <li><strong>Mikrofon</strong>: Sesli not almak için.</li>
+    <li><strong>Bildirimler</strong>: Hatırlatma ve alarm bildirimleri için.</li>
+    <li><strong>Alarm ve hatırlatıcılar / tam ekran bildirim</strong>: Hatırlatmaların zamanında ve kilit ekranında çalması için.</li>
+    <li><strong>İnternet</strong>: Giriş/doğrulama ve ses ve dil modellerinin bir kez indirilmesi için.</li>
+    <li><strong>Açılışta başlama</strong>: Telefon yeniden açıldığında kurulu alarmları yeniden kurmak için.</li>
+  </ul>
+
+  <h2>6. Saklama ve silme</h2>
+  <ul>
+    <li>Cihazdaki kayıtlar, siz silene ya da uygulamayı kaldırana kadar telefonunuzda kalır.</li>
+    <li><strong>Hesabınızı uygulamadan silebilirsiniz:</strong> Ayarlar (⚙) → <em>Hesabımı sil</em>. Bu işlem Firebase’deki hesabınızı ve
+      telefondaki tüm kayıtları kalıcı olarak siler.</li>
+    <li>Uygulamaya erişiminiz yoksa hesap silme talebinizi, hesabınıza ait e-posta adresinden
+      <a href="mailto:ersenoztrk@gmail.com?subject=Sayday%20hesap%20silme">ersenoztrk@gmail.com</a> adresine
+      “Hesap silme” konulu bir e-postayla iletebilirsiniz. Talepler en geç 30 gün içinde yerine getirilir.</li>
+  </ul>
+
+  <h2>7. Güvenlik</h2>
+  <p>Giriş bilgileri Google Firebase altyapısında şifreli bağlantı (HTTPS) üzerinden iletilir. Cihazdaki kayıtlar Android’in
+  uygulamaya özel depolama alanında tutulur ve diğer uygulamalar tarafından okunamaz.</p>
+
+  <h2>8. Çocuklar</h2>
+  <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve bilerek çocuklardan bilgi toplamaz.</p>
+
+  <h2>9. Haklarınız (KVKK)</h2>
+  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında verilerinize erişme, düzeltilmesini veya silinmesini isteme haklarına sahipsiniz.
+  Talepleriniz için <a href="mailto:ersenoztrk@gmail.com">ersenoztrk@gmail.com</a> adresine yazabilirsiniz.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Bu politika güncellenirse yeni hali bu sayfada yayımlanır ve “Son güncelleme” tarihi değiştirilir.</p>
+
+  <h2>İletişim</h2>
+  <p>Ersen Öztürk – <a href="mailto:ersenoztrk@gmail.com">ersenoztrk@gmail.com</a></p>
+</main>
+</body>
+</html>
